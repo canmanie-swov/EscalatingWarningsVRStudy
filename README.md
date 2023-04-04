@@ -18,17 +18,20 @@ If you want to disable the ability for participants to take over control, edit t
 
 # FAQ
 
-## I see `ModuleNotFoundError: No module named 'DReyeVR_utils'` or `ModuleNotFoundError: No module named 'carla'`.
+### I see `ModuleNotFoundError: No module named 'DReyeVR_utils'` or `ModuleNotFoundError: No module named 'carla'`.
 
 Open command prompt, `cd` to this directory and run `set_paths.bat`.
 
-## The speedometer is in MPH instead of KPH.
+### The speedometer is in MPH instead of KPH.
 
 In the package, open `CarlaUE4\Config\DReyeVRConfig` and set the line `SpeedometerInMPH=True;` to `False`.
 
 # Changes we made to the DReyeVR/Carla codebase
 
+Not all of these changes are necessary aand are the result of a messy hack used to disable all traffic lights in order to disable a specific light on the experimental route. The other major change was to accomodate the addition of a flag to enable/disable manual tackeover.
+
 ## Editor
+
 ### Map: Town04
 - **IMPORTANT** Commented out the function `SetTrafficLightsState` on line `102` in `PATH_TO_CARLA\\CarlaUE4\Plugins\Carla\Source\Carla\Traffic\TrafficLightController.cpp` to disable the use of traffic lights because we were getting errors after destroying lights. **This means traffic lights cannot be used in this package!**
 -  **IMPORTANT** Forced a 90 speed limit at all times ion line `14` in `PATH_TO_CARLA\\CarlaUE4\Plugins\Carla\Source\Carla\Traffic\SpeedLimitComopnent.cpp`. (This is extremely sub-optimal, but works)
