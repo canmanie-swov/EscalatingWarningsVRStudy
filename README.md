@@ -28,7 +28,7 @@ In the package, open `CarlaUE4\Config\DReyeVRConfig` and set the line `Speedomet
 
 # Changes we made to the DReyeVR/Carla codebase
 
-Not all of these changes are necessary aand are the result of a messy hack used to disable all traffic lights in order to disable a specific light on the experimental route. The other major change was to accomodate the addition of a flag to enable/disable manual tackeover.
+Not all of these changes are necessary. Most are the result of a messy hack used to disable all traffic lights because we wanted to disable a specific light on the experimental route (and had trouble doing this fully for only a single light). The other major change was to accomodate the addition of a flag to enable/disable manual tackeover.
 
 ## Editor
 
