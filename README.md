@@ -1,6 +1,6 @@
 # Escalating Warnings VR Study
 
-Welcome to the code base for the VR study on escalating distraction warnings! Note that this code runs on Windows, and some changes will be made (e.g. path format, use of supprocess to open Carla) for it to run on different machines.
+Welcome to the code base for the VR study on escalating distraction warnings! This code runs on Windows, and some changes will be made (e.g. path format, use of supprocess to open Carla) for it to run on different machines.
 
 To run this experiment, you must have [DReyeVR](https://github.com/HARPLab/DReyeVR) (and therefore also Carla and UNREAL4) installed and built. Please see [their documentation](https://github.com/HARPLab/DReyeVR/blob/main/Docs/Install.md) for more details. 
 
