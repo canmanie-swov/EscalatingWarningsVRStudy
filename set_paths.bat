@@ -1,0 +1,7 @@
+@echo off
+
+set PYTHONPATH=%PYTHONPATH%;%CARLA_ROOT%\PythonAPI\carla\dist\carla-0.9.13-py3.8-win-amd64.egg
+set PYTHONPATH=%PYTHONPATH%;%CARLA_ROOT%\PythonAPI\examples
+set PYTHONPATH=%PYTHONPATH%;%CARLA_ROOT%\PythonAPI\carla\agents
+set PYTHONPATH=%PYTHONPATH%;%CARLA_ROOT%\PythonAPI\carla
+set PYTHONPATH=%PYTHONPATH%;%CARLA_ROOT%\PythonAPI
