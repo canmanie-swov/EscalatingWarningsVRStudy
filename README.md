@@ -1,16 +1,14 @@
 # Escalating Warnings VR Study
 
-Welcome to the code base for the VR study on escalating distraction warnings! This code runs on Windows, and some changes will be required (e.g. path format, use of `subprocess` library to open Carla executable) for it to run on different machines.
+Welcome to the code base for the VR study on escalating distraction warnings! This code runs on Windows, and some changes will be required (e.g. path format, use of `subprocess` library to open Carla executable) for it to run on different machines. To run this experiment, you must have [DReyeVR](https://github.com/HARPLab/DReyeVR) (and therefore also Carla and UNREAL4) installed and built. Please see [their documentation](https://github.com/HARPLab/DReyeVR/blob/main/Docs/Install.md) for more details. 
 
-To run this experiment, you must have [DReyeVR](https://github.com/HARPLab/DReyeVR) (and therefore also Carla and UNREAL4) installed and built. Please see [their documentation](https://github.com/HARPLab/DReyeVR/blob/main/Docs/Install.md) for more details. 
-
-NOTE: The `configs/DReyeVR.config` file has some changes we made such as the camera position initialization and inclusion of a flag to enable/disable manual takeover.
+The `configs/DReyeVR.config` file has some changes we made such as the camera position initialization and inclusion of a flag to enable/disable manual takeover.
 
 ## Running the experiment
 
 `cd` to this directory and execute `python run_experiment.py`. The default condition will be the baseline; you can change this by adding the flag `--condition=escalating`. The options are `baseline`, `escalating`, and `non-escalating`.
 
-Note: The CarlaUE4 window needs to be the active window in order to send sound to the VR headset and to allow for steering wheel or pedal input.
+The CarlaUE4 window needs to be the active window in order to send sound to the VR headset and to allow for steering wheel or pedal input.
 
 ### Disabling manual takeover
 
