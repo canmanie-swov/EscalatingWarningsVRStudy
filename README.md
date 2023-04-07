@@ -34,7 +34,7 @@ Not all of these changes are necessary. Most are the result of a messy hack used
 
 ### Map: Town04
 - **IMPORTANT** Commented out the function `SetTrafficLightsState` on line `102` in `PATH_TO_CARLA\CarlaUE4\Plugins\Carla\Source\Carla\Traffic\TrafficLightController.cpp` to disable the use of traffic lights because we were getting errors after destroying lights. **This means traffic lights cannot be used in this package!**
--  **IMPORTANT** Forced a 90 speed limit at all times ion line `14` in `PATH_TO_CARLA\CarlaUE4\Plugins\Carla\Source\Carla\Traffic\SpeedLimitComopnent.cpp`. (This is extremely sub-optimal, but works)
+-  **IMPORTANT** Forced a 90 speed limit at all times on line `14` in `PATH_TO_CARLA\CarlaUE4\Plugins\Carla\Source\Carla\Traffic\SpeedLimitComopnent.cpp`. (This is extremely sub-optimal, but works)
 - In the SUBLAYER map for traffic signs, changed all BP_SpeedLimit60 and 30 to 90, both for traffic sign state and limit. (This is a hack to see if we can stop other cars from slowing down at the intersection) (Update: this did not seem to affect the main map at all. Should revert.)
 - Changed all rectangular `BP_SpeedLimit60_*` and `BP_SpeedLimit30_*` signs on the "highway" to be 90 for limit and traffic sign state and hid them in game. Did the same in Town04_Opt to the blueprints. (Update: this also did not seem to affect the phantom signs at all.)
 - Changed all rectangular `BP_SpeedLimit60_*` and `BP_SpeedLimit30_*` blueprints to 'Do not spawn' and 'Hidden in game'. (Update: this also did not seem to affect the phantom signs at all.)
