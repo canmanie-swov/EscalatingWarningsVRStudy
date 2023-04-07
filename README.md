@@ -8,7 +8,7 @@ NOTE: The `configs/DReyeVR.config` file has some changes we made such as the cam
 
 ## Running the experiment
 
-`cd` to this directory and execute `python run_experiment.py`. You will be prompted to adjust the camera and can continue by pressing enter. The default condition will be the baseline; you can change this by adding the flag `--condition=escalating`. The options are `baseline`, `escalating`, and `non-escalating`.
+`cd` to this directory and execute `python run_experiment.py`. The default condition will be the baseline; you can change this by adding the flag `--condition=escalating`. The options are `baseline`, `escalating`, and `non-escalating`.
 
 Note: The CarlaUE4 window needs to be the active window in order to send sound to the VR headset and to allow for steering wheel or pedal input.
 
