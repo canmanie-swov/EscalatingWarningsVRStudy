@@ -47,7 +47,7 @@
     "icon_rotation": [0, 90, -28.1],
     "familiarization": {"sound_files": []},
     "baseline": {"sound_files": []}, 
-    "escalating": {"sound_files": ["sounds\\alert_1_short.wav", "sounds\\alert_3_cut_highgain_shorter.wav"]},
-    "non-escalating": {"sound_files": ["sounds\\alert_3_cut_highgain_shorter.wav"]}
+    "escalating": {"sound_files": ["sounds\\sound_A.wav", "sounds\\sound_C.wav"]},
+    "non-escalating": {"sound_files": ["sounds\\sound_C.wav"]}
 }
 
