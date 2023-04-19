@@ -2,7 +2,8 @@
 
 Welcome to the code base for the VR study on escalating distraction warnings! This code runs on Windows, and some changes will be required (e.g. path format, use of `subprocess` library to open Carla executable) for it to run on different machines. To run this experiment, you must have [DReyeVR](https://github.com/HARPLab/DReyeVR) (and therefore also Carla and UNREAL4) installed and built. Please see [their documentation](https://github.com/HARPLab/DReyeVR/blob/main/Docs/Install.md) for more details. 
 
-The `configs/DReyeVR.config` file has some changes we made such as the camera position initialization and inclusion of a flag to enable/disable manual takeover.
+Important:
+The assets in the zip file `UnrealAssets` contain physical changes we made to the vehicle in order to display a task on a screen added to the vehicle and also display an icon on the dashboard. These need to be integrated into the package in order to spawn everything correctly. Also, the `configs/DReyeVR.config` file has some changes we made such as the camera position initialization and inclusion of a flag to enable/disable manual takeover and can directly replace the default config.
 
 ## Running the experiment
 
